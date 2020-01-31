@@ -106,10 +106,11 @@ a:hover {
 .social-media-icon-row {
   display: flex;
   flex: row;
-  margin-right: 5px;
+  flex-wrap: wrap;
 }
 .icon {
   width: 40px;
+  padding:10px;
 }
 .footer {
   background-color: #eee;
