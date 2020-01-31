@@ -105,7 +105,7 @@ a:hover {
 }
 .social-media-icon-row {
   display: flex;
-  flex: column;
+  flex: row;
   flex-wrap: wrap;
 }
 .icon {
