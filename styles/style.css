@@ -105,8 +105,12 @@ a:hover {
 }
 .social-media-icon-row {
   display: flex;
-  flex: row;
+  flex: column;
   flex-wrap: wrap;
+}
+.social-media-icon-instagram {
+  display: flex;
+  flex: row;
 }
 .icon {
   width: 40px;
