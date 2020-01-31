@@ -112,6 +112,14 @@ a:hover {
   display: flex;
   flex: row;
 }
+.social-media-icon-linkedin {
+  display: flex;
+  flex: row;
+}
+.social-media-icon-facebook {
+  display: flex;
+  flex: row;
+}
 .icon {
   width: 40px;
   padding:10px;
