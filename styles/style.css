@@ -3,12 +3,12 @@
   --font-color: #222222;
 }
 nav {
-  border:1px; 
   background-color:#f8b195; 
-  padding:10px;
+  border:1px; 
+  padding:20px;
   position:fixed;
   top:0;
-  left:0;
+  right:0;
 }
 body {
   background: linear-gradient(90deg, hsl(10, 100%, 70%), rgb(204,204,255));
@@ -51,7 +51,6 @@ p {
 a {
   text-decoration: none;
   color: eggplant;
-
 }
 a:hover {
   color: magenta;
@@ -63,8 +62,8 @@ a:hover {
   font-color: black;
 }
 .meImage {
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
   padding: 10px;
 }
 .intro {
@@ -77,13 +76,29 @@ a:hover {
   font-size: 50px;
   font-family: var(--font), sans-serif;
 }
-.main {
-  background-color: #ffb6b9;
+.main-intro {
+  background-color: #eee;
   color: black;
   font-size: 18px;
-  padding: 10px;
+  padding: 40px;
+  text-align: left;
+  margin: 0px 400px 0px 400px;
+}
+.main-about {
+  background-color: #eee;
+  color: black;
+  font-size: 18px;
+  padding: 40px;
   text-align: left;
   margin: 0px 200px 0px 200px;
+}
+.main-contact {
+  background-color: #eee;
+  color: black;
+  font-size: 18px;
+  padding: 40px;
+  text-align: left;
+  margin: 0px 400px 0px 400px;
 }
 .socialMedia {
   margin: 40px 0 20px 0;
