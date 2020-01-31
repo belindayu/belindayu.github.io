@@ -103,6 +103,10 @@ a:hover {
 .socialMedia {
   margin: 40px 0 20px 0;
 }
+.sm-instagram {
+  display: flex;
+  flex: row;
+}
 .icon {
   width: 40px;
 }
