@@ -82,7 +82,7 @@ a:hover {
   font-size: 18px;
   padding: 40px;
   text-align: left;
-  margin: 0px 400px 0px 400px;
+  margin: 0px 400px 40px 400px;
 }
 .main-about {
   background-color: #eee;
@@ -103,7 +103,7 @@ a:hover {
 .socialMedia {
   margin: 40px 0 20px 0;
 }
-.social-media-icon-row {
+.social-media-icons {
   display: flex;
   flex: column;
   flex-wrap: wrap;
