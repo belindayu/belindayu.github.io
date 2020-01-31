@@ -1,0 +1,149 @@
+<!DOCTYPE html> <!-- Tells the browser what HTML version the page is written in -->
+<html>
+<head>
+	<title> Surveys </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Poppins|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1 align="left"> Surveys</h1>
+	<hr>
+	<div id="survey-main">
+	<form action="Submission.html" method="POST">
+		<section class=questions>
+			<!-- select date -->
+			<h4>today is</h4>
+			<div id="date-answer-box">
+			<label for="date"></label>
+			<input type="date" id="date" name="date">
+		</div>
+			<br>
+			<br>
+			<hr>
+			<!-- user info -->
+			<section class="user">
+				<h4>user</h4>
+				<section class="user-questions">
+					<section class="answer-box">
+				<label for="username">Username:</label>  
+				<input type="text" name="username">
+			</section>
+				<br>
+				<section class="answer-box">
+				<label for="password">Password:</label>
+				<input type="password" name="user-pw">
+			</section>
+				<br>
+				<section class="answer-box">
+				<label for="num">Choose a number:</label>
+				<input type="number" name="user-num">
+			</section>
+				<br>
+				<section class="answer-box">
+				<label for="volume">Volume Control:</label>
+				<input type="range" name="user-volume">
+			</section>
+			</section>
+			</section>
+			<br>
+			<br>
+			<hr>
+
+			<!-- food survey -->
+			<section class="favorite-foods">
+				<h4> food </h4>
+				<!-- checkbox selection -->
+				<section class="user-questions">
+				<section class="beans">
+					<span>What are your favorite beans?</span>
+					<br>
+					<br>
+					<label for="kidney"> <!-- correct formatting here at kidneybean -->
+						<input id="kidney" value="kidney" type="checkbox" name="bean">kidney
+					</label>
+					<br>
+					<label for="navy">navy</label>
+					<input type="checkbox" name="navybean">
+					<br>
+					<label for="chickpeas">chickpeas</label>
+					<input type="checkbox" name="chickpeas">
+				</section>
+			
+				<br>
+				<br>
+				<br>
+
+				<!-- radio button selection -->
+				
+				<section class="friendsnotfood">
+					<span>Are animals food?</span>
+					<br>
+					<input type="radio" name="animals" id="yes" value="yes">
+					<label for="yes">yes</label>
+					<input type="radio" name="animals" id="no" value="no">
+					<label for="no">no</label>
+				</section>
+			
+				<br>
+				<br>
+				<br>
+
+				<!-- dropdown list selection -->
+				<section class="plantProtein">
+					<span>What is your favorite plant protein?</span>
+					<br>
+					<br>
+					<label for="protein">select:</label>
+					<select id="protein" name="protein">
+						<option value="tofu">Tofu</option>
+						<option value="tempeh">Tempeh</option>
+						<option value="Seitan">Seitan</option>
+					</select>
+				</section>
+				<br>
+				<br>
+				<br>
+
+				<!-- <option> elements and works with <input> to search through choices -->
+					<section class="grain">
+						<span>What is your favorite grain?</span>
+						<br>
+						<br>
+						<label for="grain">grain:</label>
+						<input list="grains" id="grain" name="grain">
+						<datalist id="grains">
+							<option value="white rice"></option>
+							<option value="brown rice"></option>
+							<option value="quinoa"></option>
+						</datalist>
+						<br>
+						<br>
+						<br>
+					</section>
+					
+				</section> <!-- end fave foods -->
+
+				<!-- text input w/ customizable area -->
+				<section class="user-questions">
+					<label for="comments">Anything else you want to add?</label>
+				</section>
+					<section class="answer-box">
+					<textarea id="extra" name="extra" rows="8" cols="45">Say something here!</textarea>
+				</section>
+				
+			</section>
+				<hr>
+				<h3> click the button below when you're ready to submit! </h3>
+
+				<!-- submit button. name=value pairs are submitted -->
+				<section class="submission">
+					<!--Add your code below-->
+					<input type="submit" value="Submit">
+					<button><h3>Submit</h3></button>
+				</section>
+			</section>
+		</form>
+	</div>
+	</body>
+	</html>
