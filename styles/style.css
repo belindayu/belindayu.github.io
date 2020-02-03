@@ -3,18 +3,29 @@
   --font-color: #222222;
 }
 nav {
-  background-color:#f8b195; 
+  /*background-color:#f8b195; */
   border:1px; 
-  padding:20px;
+  padding:18px;
   position:fixed;
   top:0;
-  right:0;
+  right: 0;
+  margin: 20px;
+  margin-right:0px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  margin-right: 50px;
 }
 body {
   background: linear-gradient(90deg, hsl(10, 100%, 70%), rgb(204,204,255));
   text-align: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 h1 {
   color: var(--font-color);
@@ -29,7 +40,6 @@ h2 {
   font-family: var(--font), sans-serif;
   font-size: 33px;
   text-align: left;
-  margin-left: 20px;
 }
 h3 {
   color: var(--font-color);
@@ -51,38 +61,50 @@ p {
 a {
   text-decoration: none;
   color: eggplant;
+
 }
 a:hover {
   color: magenta;
 }
 
-.nav-bar {
+.nav-text {
   font-size: 20px;
   font-family: var(--font), sans-serif;
   font-color: black;
 }
-.meImage {
-  width: 10%;
-  height: 10%;
-  padding: 10px;
-}
-.intro {
-  align-items: center;
-  display: block;
-}
-.intro-title { 
-  color: var(--font-color);
-  margin: 20px;
-  font-size: 50px;
-  font-family: var(--font), sans-serif;
-}
-.main-intro {
+.home-body {
   background-color: #eee;
   color: black;
   font-size: 18px;
-  padding: 40px;
+  padding: 70px 140px 200px 120px;
   text-align: left;
-  margin: 0px 400px 40px 400px;
+  width: 82%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.home-title { 
+  color: var(--font-color);
+  font-size: 40px;
+  font-family: var(--font), sans-serif;
+}
+.home-subtitle { 
+  color: var(--font-color);
+  font-size: 16px;
+  font-family: var(--font), sans-serif;
+  width: 80%;
+
+}
+@media only screen and (max-width: 960px){
+.home-subtitle { 
+  color: var(--font-color);
+  font-size: 16px;
+  font-family: var(--font), sans-serif;
+ 
+  overflow-y: scroll;
+  width: 80%;
+  display: inline-block;
+}
 }
 .main-about {
   background-color: #eee;
@@ -91,6 +113,7 @@ a:hover {
   padding: 40px;
   text-align: left;
   margin: 0px 200px 0px 200px;
+  border-radius: 1em;
 }
 .main-contact {
   background-color: #eee;
@@ -99,14 +122,14 @@ a:hover {
   padding: 40px;
   text-align: left;
   margin: 0px 400px 0px 400px;
+  border-radius: 1em;
 }
 .socialMedia {
   margin: 40px 0 20px 0;
 }
 .social-media-icons {
-  display: flex;
-  flex: column;
-  flex-wrap: wrap;
+  
+  
 }
 .social-media-icon-instagram {
   display: flex;
@@ -128,7 +151,8 @@ a:hover {
   background-color: #eee;
   font-size: 1em;
   font-family: 'Raleway', sans-serif;
-  padding: 30px;
+  padding: 1px;
+  padding-left: 30px;
   text-align: left;
 }
 .user-questions{
@@ -142,7 +166,7 @@ a:hover {
   transform: scale(1.05);
 }
 .icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .answer-box {
   padding: 30px;
@@ -151,19 +175,18 @@ a:hover {
 #date-answer-box {
   text-align: center;
 }
-#survey-main {
-  background-color: #ffb6b9;
+#survey-container {
+  background-color: #eee;
   color: black;
   font-size: 18px;
   padding: 10px;
   text-align: left;
   margin: 20px 300px 10px 300px;
+  border-radius: 1em;
 }
-
-
-
-
-
+.submit-button-text {
+  padding: 10px;
+}
 
 
 
@@ -171,17 +194,21 @@ a:hover {
   text-align: center;
 }
 /*****************************************************************/
-/* change hover state of button */
+
 button {
-  border-radius: 5px;
-  color: white;
-  background-color: #4791d0;
-  padding: 3px 8px 8px 8px;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #6791d0;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
 }
 
+/* change hover state of button */
 button:hover {
   animation-name: background-color;
-  animation-duration: 500ms;
+  animation-duration: 200ms;
   animation-fill-mode: forwards; /* button stays highlighted when hovered */
 }
 
