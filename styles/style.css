@@ -63,7 +63,10 @@ a {
 
 }
 a:hover {
-  color: magenta;
+  color: gray;
+}
+a, a:visited{
+     color: eggplant;
 }
 
 .nav-bar {
@@ -72,14 +75,13 @@ a:hover {
   font-color: black;
 }
 .home-body {
-  background-color: #eee;
+  background-color: #FDFDF0;
   color: black;
   font-size: 18px;
   padding: 60px 140px 200px 120px;
   text-align: left;
   width: 82%;
   margin-top: 100px;
-  margin-bottom: 50px;
 }
 
 .home-title { 
@@ -92,6 +94,11 @@ a:hover {
   font-size: 16px;
   font-family: var(--font), sans-serif;
   width: 85%;
+  line-height: 33px;
+}
+#why-dev {
+width: 80%;
+line-height: 33px;
 
 }
 @media only screen and (max-width: 960px){
