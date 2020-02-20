@@ -92,16 +92,14 @@ a, a:visited{
   color: var(--font-color);
   font-size: 16px;
   font-family: var(--font), sans-serif;
-    width: 71%;
+   width: 78%;
 line-height: 33px;
 }
 #bio {
-    width: 71%;
-line-height: 33px;
+    width: 91%;
 }
 #why-dev {
-width: 71%;
-line-height: 33px;
+width: 90%;
 }
 @media only screen and (max-width: 960px){
 .home-subtitle { 
