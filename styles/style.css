@@ -137,8 +137,12 @@ a, a:visited{
 }
 
 /** PROJECTS **/
+.page-title{
+  margin-top: 80px;
+}
 .projects-main {
   background-color: #eee;
+  margin-bottom:-1000;
 }
 .projects-fcc {
   color: black;
