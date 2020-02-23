@@ -1,16 +1,12 @@
 :root{
   --font-apple: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
   --font-color: #222222;
+  --color-background: #deddfa;
+  --color-body: #FDFDF0;
 }
 nav {
   /*background-color:#f8b195; */
-  border:1px; 
-  padding:18px;
-  position:fixed;
-  top:0;
-  right: 0;
-  margin: 20px;
-  margin-right:0px;
+  
 }
 nav ul {
   list-style-type: none;
@@ -19,10 +15,11 @@ nav ul {
 }
 nav li {
   display: inline;
-  margin-right: 50px;
 }
+
 body {
-  background: linear-gradient(90deg, hsl(10, 100%, 70%), rgb(204,204,255));
+  /*linear-gradient(90deg, hsl(10, 100%, 70%), rgb(204,204,255));*/
+  background-color:var(--color-body);
   padding: 0;
   margin: 0;
 }
@@ -55,6 +52,7 @@ h4 { /* contact font*/
 p {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -65,27 +63,39 @@ a:hover {
   color: gray;
 }
 a, a:visited{
-     color: eggplant;
+ color: eggplant;
 }
-
-.nav-bar {
-  font-size: 20px;
+.navbar {
+  background-color: var(--color-background);
+  position:fixed;
+  top:0;
+  right: 0;
+  width:100%;
+}
+.nav-items {
+  display: inline;
+  padding:19px;
+  float:right;
+  margin-right:20px;
+}
+.nav-item {
+  font-size: 16px;
   font-family: var(--font-apple), sans-serif;
   font-color: black;
+  margin-left:40px;
 }
-.home-body {
-  background-color: #FDFDF0;
+.home-intro {
+  background-color: var(--color-body);
   color: black;
   font-size: 18px;
-  padding: 60px 140px 150px 120px;
+  padding: 160px 140px 0px 120px;
   text-align: left;
   width: 82%;
-  margin-top: 100px;
 }
 
 .home-title { 
   color: var(--font-color);
-  font-size: 40px;
+  font-size: 50px;
   font-family: Helvetica;
 }
 .home-subtitle { 
@@ -95,47 +105,62 @@ a, a:visited{
   width: 78%;
   line-height: 33px;
 }
-#bio {
-    width: 91%;
+
+.home-second {
+  background-color: var(--color-body);
+  color: black;
+  text-align: left;
+  padding: 170px 140px 150px 120px;
+}
+#why-dev-title {
+  color: var(--font-color);
+  font-size: 18px;
+  font-family: var(--font-apple), Helvetica;
+  letter-spacing:1px;
 }
 #why-dev {
-width: 90%;
-}
-@media only screen and (max-width: 960px){
-.home-subtitle { 
-  color: var(--font-color);
-  font-size: 16px;
-  font-family: var(--font-apple), sans-serif;
- 
-  overflow-y: scroll;
   width: 80%;
+  line-height: 33px;
   display: inline-block;
 }
+
+@media only screen and (max-width: 960px){
+  .home-subtitle { 
+    color: var(--font-color);
+    font-size: 16px;
+    font-family: var(--font-apple), sans-serif;
+
+    overflow-y: scroll;
+    width: 80%;
+    display: inline-block;
+  }
 }
-.main-about {
+
+/** PROJECTS **/
+.projects-main {
   background-color: #eee;
-  color: black;
-  font-size: 18px;
-  padding: 40px;
-  text-align: left;
-  margin: 0px 200px 0px 200px;
-  border-radius: 1em;
 }
-.main-contact {
-  background-color: #eee;
+.projects-fcc {
   color: black;
   font-size: 18px;
   padding: 40px;
   text-align: left;
   margin: 0px 400px 0px 400px;
-  border-radius: 1em;
+}
+
+/** CONTACT **/
+.main-contact {
+  background-color: #eee;
+  color: black;
+  font-size: 18px;
+  padding: 40px;
 }
 .socialMedia {
-  margin: 40px 0 20px 0;
+  margin: 40px 400px 20px 500px;
 }
 .social-media-icons {
-  
-  
+
+
 }
 .social-media-icon-email {
   display: flex;
@@ -148,8 +173,11 @@ width: 90%;
 .icon {
   padding:10px;
   width: 48px;
-
 }
+
+
+
+/** FOOTER **/
 .footer {
   background-color: #eee;
   font-size: 1em;
@@ -157,6 +185,17 @@ width: 90%;
   padding: 1px;
   padding-left: 30px;
   text-align: left;
+}
+
+/** ETC **/
+.main-about {
+  background-color: #eee;
+  color: black;
+  font-size: 18px;
+  padding: 40px;
+  text-align: left;
+  margin: 0px 200px 0px 200px;
+  border-radius: 1em;
 }
 .user-questions{
   color: var(--font-color);
@@ -190,18 +229,13 @@ width: 90%;
 .submit-button-text {
   padding: 10px;
 }
-.projects-main {
-  background-color: #eee;
-  color: black;
-  font-size: 18px;
-  padding: 40px;
-  text-align: left;
-  margin: 0px 400px 0px 400px;
-  border-radius: 1em;
-}
-
 
 
 .left-align {
   text-align: center;
 }
+
+
+/** END ETC **/
+
+
