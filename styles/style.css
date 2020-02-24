@@ -19,23 +19,18 @@ nav li {
 
 body {
   /*linear-gradient(90deg, hsl(10, 100%, 70%), rgb(204,204,255));*/
-  background-color:var(--color-body);
+  background-color: var(--color-body);
   padding: 0;
   margin: 0;
 }
 h1 {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
-  text-align: left;
-  margin-left: 30px;
-  font-size: 50px;
-  letter-spacing: 1px;
 }
 h2 {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
   font-size: 33px;
-  text-align: left;
 }
 h3 {
   color: var(--font-color);
@@ -56,14 +51,14 @@ p {
 }
 a {
   text-decoration: none;
-  color: eggplant;
+  color: purple;
 
 }
 a:hover {
   color: gray;
 }
 a, a:visited{
- color: eggplant;
+ color: purple;
 }
 .navbar {
   background-color: var(--color-background);
@@ -81,55 +76,56 @@ a, a:visited{
 .nav-item {
   font-size: 16px;
   font-family: var(--font-apple), sans-serif;
-  font-color: black;
+  color: black;
   margin-left:40px;
 }
 .home-intro {
   background-color: var(--color-body);
   color: black;
   font-size: 18px;
-  padding: 160px 140px 0px 120px;
-  text-align: left;
+  padding: 160px 140px 20px 120px;
   width: 82%;
 }
 
-.home-title { 
+.home-title {
+  font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 50px;
-  font-family: Helvetica;
+  letter-spacing: 1px;
 }
 .home-subtitle { 
+  font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 16px;
-  font-family: var(--font-apple), Helvetica;
   width: 78%;
   line-height: 33px;
 }
 
-.home-second {
+#why-dev {
   background-color: var(--color-body);
   color: black;
   text-align: left;
-  padding: 170px 140px 150px 120px;
+  margin-bottom:170px;
 }
 #why-dev-title {
+  font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
-  font-size: 18px;
-  font-family: var(--font-apple), Helvetica;
-  letter-spacing:1px;
+  font-size: 47px;
+  padding-left: 120px;
+  padding-top:170px
 }
-#why-dev {
-  width: 80%;
+#why-dev-main {
+  background-color: #eee;
+  width: 70%;
   line-height: 33px;
-  display: inline-block;
+  padding: 50px 120px 50px 120px;
 }
 
 @media only screen and (max-width: 960px){
   .home-subtitle { 
+    font-family: var(--font-apple), sans-serif;
     color: var(--font-color);
     font-size: 16px;
-    font-family: var(--font-apple), sans-serif;
-
     overflow-y: scroll;
     width: 80%;
     display: inline-block;
@@ -137,30 +133,44 @@ a, a:visited{
 }
 
 /** PROJECTS **/
-.page-title{
-  margin-top: 80px;
+#projects {
+  margin-top: 45px;
+}
+.projects-title{
+  font-family: var(--font-apple), sans-serif;
+  color: var(--font-color);
+  font-size: 47px;
+  padding-left: 120px;
 }
 .projects-main {
   background-color: #eee;
-  margin-bottom:-1000;
+  padding: 50px 120px 50px 120px;
+  width: 70%;
 }
 .projects-fcc {
-  color: black;
+  color: var(--font-color);
   font-size: 18px;
-  padding: 40px;
-  text-align: left;
-  margin: 0px 400px 0px 400px;
 }
 
 /** CONTACT **/
-.main-contact {
+#contact {
+  margin: 170px 0 200px 175px; 
+}
+.contact-title {
+  font-family: var(--font-apple), sans-serif;
+  color: var(--font-color);
+  font-size: 47px;
+  padding-right: 120px;
+  text-align: right;
+}
+.contact-main {
+  display:flex;
+  justify-content: flex-end;
   background-color: #eee;
-  color: black;
-  font-size: 18px;
-  padding: 40px;
+  padding: 50px 120px 50px 120px;
 }
 .socialMedia {
-  margin: 40px 400px 20px 500px;
+  
 }
 .social-media-icons {
 
@@ -176,20 +186,39 @@ a, a:visited{
 }
 .icon {
   padding:10px;
+  padding-right:12px;
   width: 48px;
 }
+.icon:hover {
+  transform: scale(1.05);
+}
 
-
+/** CLOSING **/
+#closing {
+  margin: 200px 0 200px 0; 
+}
+.closing-title {
+  font-family: var(--font-apple), sans-serif;
+  color: var(--font-color);
+  font-size: 40px;
+  text-align:center;
+  padding-bottom: 200px;
+}
 
 /** FOOTER **/
 .footer {
-  background-color: #eee;
+  background-color: #dcdbe1;
   font-size: 1em;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-apple), sans-serif;
   padding: 1px;
   padding-left: 30px;
   text-align: left;
 }
+
+
+
+
+
 
 /** ETC **/
 .main-about {
@@ -207,12 +236,6 @@ a, a:visited{
   font-weight: 1.2;
   margin-left: 30px;
 
-}
-.meImage:hover {
-  transform: scale(1.05);
-}
-.icon:hover {
-  transform: scale(1.05);
 }
 .answer-box {
   padding: 30px;
