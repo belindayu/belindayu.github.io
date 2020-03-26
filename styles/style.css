@@ -141,7 +141,7 @@ a:hover {
   padding-left: 120px;
 }
 .projects-main {
-  background-color: #eee;
+  background-color: #E8E8E8;
   padding: 50px 120px 50px 120px;
   width: 65%;
 }
@@ -164,7 +164,7 @@ a:hover {
 .contact-main {
   display:flex;
   justify-content: flex-end;
-  background-color: #eee;
+  background-color: #E8E8E8;
   padding: 50px 120px 50px 120px;
 }
 .social-media-label {
