@@ -45,7 +45,7 @@ h4 {
 p {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -70,7 +70,7 @@ a:hover {
   margin-right:20px;
 }
 .nav-item {
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--font-apple), sans-serif;
   color: black;
   margin-left:40px;
@@ -87,19 +87,18 @@ a:hover {
 .home-title {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
-  font-size: 50px;
+  font-size: 65px;
   letter-spacing: 1px;
 }
 .home-subtitle { 
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
-  font-size: 16px;
-  width: 78%;
+  font-size: 20px;
+  width: 85%;
   line-height: 33px;
 }
 
 #why-dev {
-  
   color: black;
   text-align: left;
   margin-bottom:170px;
@@ -117,13 +116,14 @@ a:hover {
   width: 65%;
   line-height: 33px;
   padding: 50px 120px 50px 120px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 
 @media only screen and (max-width: 960px){
   .home-subtitle { 
     font-family: var(--font-apple), sans-serif;
     color: var(--font-color);
-    font-size: 16px;
+    font-size: 18px;
     overflow-y: scroll;
     width: 80%;
     display: inline-block;
@@ -144,6 +144,7 @@ a:hover {
   background-color: #E8E8E8;
   padding: 50px 120px 50px 120px;
   width: 65%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .projects-fcc {
   color: var(--font-color);
@@ -166,9 +167,10 @@ a:hover {
   justify-content: flex-end;
   background-color: #E8E8E8;
   padding: 50px 120px 50px 120px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .social-media-label {
-  letter-spacing: .5px;
+  letter-spacing: .3px;
   font-size:20px;
 }
 .social-media-icon-email {
@@ -196,9 +198,9 @@ a:hover {
 .closing-title {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
-  font-size: 40px;
+  font-size: 50px;
   text-align:center;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 /** FOOTER **/
