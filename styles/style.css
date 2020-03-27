@@ -61,9 +61,10 @@ a:hover {
   width:100%;
 }
 .nav-items {
-  display: inline;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   padding:19px;
-  float:right;
   margin-right:20px;
 }
 .nav-link {
@@ -113,10 +114,9 @@ a:hover {
 .main-content {
   background-color: #E8E8E8;
   padding: 50px 120px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
   margin-bottom: 120px;
   max-width: 65%;
-
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .main-content p {
   line-height: 33px;
@@ -197,7 +197,8 @@ a:hover {
   .main-content{ 
     overflow-y: scroll;
     display: inline-block;
-     padding: 50px 90px;
+    padding: 50px 90px;
+
   }
 
   p {
@@ -209,7 +210,8 @@ a:hover {
     padding:0px 10px;
   }
   #contact {
-    min-width: 70%;
+    min-width: 90%;
+    margin-left: 0;
   }
   #closing-title{
     font-size: 35px; 
