@@ -4,10 +4,6 @@
   --color-background: #deddfa;
   --color-body: #F4F6F4;
 }
-span {
-  font-family: var(--font-apple), sans-serif;
-  color: var(--font-color);
-}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -39,10 +35,9 @@ h3 {
   font-family: var(--font-apple), sans-serif;
   font-size: 22px;
 }
-h4 {
-  color: var(--font-color);
+span {
   font-family: var(--font-apple), sans-serif;
-  font-size: 20px;
+  color: var(--font-color);
 }
 p {
   color: var(--font-color);
@@ -64,6 +59,7 @@ a:hover {
   top:0;
   right: 0;
   width:100%;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.19);
 }
 .nav-items {
   display: inline;
@@ -97,7 +93,7 @@ a:hover {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 20px;
-  width: 85%;
+  width: 83%;
   line-height: 33px;
 }
 
@@ -160,6 +156,7 @@ a:hover {
 .social-media-section {
   display: flex;
   flex: row;
+  align-items: center;
 }
 .icon {
   padding:10px;
