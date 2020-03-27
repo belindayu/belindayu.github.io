@@ -4,9 +4,9 @@
   --color-background: #deddfa;
   --color-body: #F4F6F4;
 }
-nav {
-  /*background-color:#f8b195; */
-  
+span {
+  font-family: var(--font-apple), sans-serif;
+  color: var(--font-color);
 }
 nav ul {
   list-style-type: none;
@@ -24,18 +24,20 @@ body {
   margin: 0px;
 }
 h1 {
-  color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
+  color: var(--font-color);
+  font-weight: normal;
+  font-size: 64px;
 }
 h2 {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
-  font-size: 33px;
+  font-size: 36px;
 }
 h3 {
   color: var(--font-color);
   font-family: var(--font-apple), sans-serif;
-  font-weight: 1.2px;
+  font-size: 22px;
 }
 h4 {
   color: var(--font-color);
@@ -53,10 +55,10 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  color: gray;
+  color: slategrey;
 }
 
-.navbar {
+#navbar {
   background-color: var(--color-background);
   position:fixed;
   top:0;
@@ -69,28 +71,29 @@ a:hover {
   float:right;
   margin-right:20px;
 }
-.nav-item {
+.nav-link {
   font-size: 18px;
   font-family: var(--font-apple), sans-serif;
   color: black;
   margin-left:40px;
 }
-.home-intro {
+
+/* introduction */
+#about {
   background-color: var(--color-body);
   color: black;
   font-size: 18px;
-  padding: 160px 140px 170px 120px;
+  padding: 120px 140px 170px 120px;
   width: 82%;
   height: 100%;
 }
-
-.home-title {
+#about-header {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
-  font-size: 65px;
+  font-size: 68px;
   letter-spacing: 1px;
 }
-.home-subtitle { 
+#about-content{ 
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 20px;
@@ -98,86 +101,63 @@ a:hover {
   line-height: 33px;
 }
 
-#why-dev {
+/* main content */
+#main-section {
   color: black;
   text-align: left;
   margin-bottom:170px;
-  margin-top:100px;
+  margin-top:80px;
 }
-#why-dev-title {
+.main-header {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 47px;
   padding-left: 120px;
+  padding-top: 70px;
+}
+.main-content {
+  background-color: #E8E8E8;
+  padding: 50px 120px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  margin-bottom: 120px;
+  max-width: 65%;
+
+}
+.main-content p {
+  line-height: 33px;
+}
+
+
+/* projects */
+#projects {
+}
+
+/* contact */
+#contact {
+  max-width:50%;
+  margin-left:auto; margin-right:0;
   
 }
-#why-dev-main {
-  background-color: #E8E8E8;
-  width: 65%;
-  line-height: 33px;
-  padding: 50px 120px 50px 120px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-}
-
-@media only screen and (max-width: 960px){
-  .home-subtitle { 
-    font-family: var(--font-apple), sans-serif;
-    color: var(--font-color);
-    font-size: 18px;
-    overflow-y: scroll;
-    width: 80%;
-    display: inline-block;
-  }
-}
-
-/** PROJECTS **/
-#projects {
-  margin-top: 45px;
-}
-.projects-title{
-  font-family: var(--font-apple), sans-serif;
-  color: var(--font-color);
-  font-size: 47px;
-  padding-left: 120px;
-}
-.projects-main {
-  background-color: #E8E8E8;
-  padding: 50px 120px 50px 120px;
-  width: 65%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-}
-.projects-fcc {
-  color: var(--font-color);
-  font-size: 18px;
-}
-
-/** CONTACT **/
-#contact {
-  margin: 170px 0 300px 650px; 
-}
-.contact-title {
+#contact-header {
   font-family: var(--font-apple), sans-serif;
   color: var(--font-color);
   font-size: 47px;
   padding-right: 120px;
   text-align: right;
 }
-.contact-main {
+#contact-content {
   display:flex;
   justify-content: flex-end;
+  justify-content: space-around;
   background-color: #E8E8E8;
-  padding: 50px 120px 50px 120px;
+  padding: 50px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .social-media-label {
   letter-spacing: .3px;
   font-size:20px;
 }
-.social-media-icon-email {
-  display: flex;
-  flex: row;
-}
-.social-media-icon-linkedin {
+.social-media-section {
   display: flex;
   flex: row;
 }
@@ -188,79 +168,98 @@ a:hover {
   height: 38px;
 }
 .icon:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /** CLOSING **/
 #closing {
   margin: 200px 0 200px 0; 
 }
-.closing-title {
-  font-family: var(--font-apple), sans-serif;
-  color: var(--font-color);
+#closing-title {
   font-size: 50px;
   text-align:center;
-  padding-bottom: 300px;
 }
 
 /** FOOTER **/
-.footer {
+#footer {
   background-color: #dcdbe1;
-  font-size: 1em;
   font-family: var(--font-apple), sans-serif;
   padding: 1px;
   padding-left: 30px;
-  text-align: left;
+  text-align:left;
+}
+#footer p{
+  font-size: 17px;
 }
 
+@media only screen and (max-width: 720px){
+  .main-header{
+    padding:0px 10px;
+    text-align: center; 
+    font-size: 40px;  
+  }
+  .main-content{ 
+    overflow-y: scroll;
+    display: inline-block;
+     padding: 50px 90px;
+  }
+
+  p {
+    text-align: center;
+   font-size: 17px; 
+  }
+  #contact-header {
+    text-align: center; 
+    padding:0px 10px;
+  }
+  #contact {
+    min-width: 70%;
+  }
+  #closing-title{
+    font-size: 35px; 
+  }
+
+
+  /** ETC **/
+  .main-about {
+    background-color: #eee;
+    color: black;
+    font-size: 18px;
+    padding: 40px;
+    text-align: left;
+    margin: 0px 200px 0px 200px;
+    border-radius: 1em;
+  }
+  .user-questions{
+    color: var(--font-color);
+    font-family: var(--font), sans-serif;
+    font-weight: 1.2;
+    margin-left: 30px;
+
+  }
+  .answer-box {
+    padding: 30px;
+  }
+
+  #date-answer-box {
+    text-align: center;
+  }
+  #survey-container {
+    background-color: #eee;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    margin: 20px 300px 10px 300px;
+    border-radius: 1em;
+  }
+  .submit-button-text {
+    padding: 10px;
+  }
 
 
 
 
-
-/** ETC **/
-.main-about {
-  background-color: #eee;
-  color: black;
-  font-size: 18px;
-  padding: 40px;
-  text-align: left;
-  margin: 0px 200px 0px 200px;
-  border-radius: 1em;
-}
-.user-questions{
-  color: var(--font-color);
-  font-family: var(--font), sans-serif;
-  font-weight: 1.2;
-  margin-left: 30px;
-
-}
-.answer-box {
-  padding: 30px;
-}
-
-#date-answer-box {
-  text-align: center;
-}
-#survey-container {
-  background-color: #eee;
-  color: black;
-  font-size: 18px;
-  padding: 10px;
-  text-align: left;
-  margin: 20px 300px 10px 300px;
-  border-radius: 1em;
-}
-.submit-button-text {
-  padding: 10px;
-}
-
-
-.left-align {
-  text-align: center;
-}
-
-
-/** END ETC **/
+  /** END ETC **/
 
 

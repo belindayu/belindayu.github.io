@@ -8,138 +8,150 @@
     <meta property="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkles_2728.png" content="X" />
 </head>
 
-<body> <!-- Contains all the content that appears on the page -->
-    <div class="navbar">
-        <nav>
-            <div class="nav-items">
-                <ul>
-                    <li class="nav-item">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="home-intro" id="about">
-        <div class="home-title">
-            <span>Hello! <strong>I'm Belinda</strong> </span>👩🏻‍💻  
+<body> <!-- navigation bar -->
+    <nav id="navbar">
+        <div class="nav-items">
+            <ul>
+                <li class="nav-link">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <br>
-        <div class="home-subtitle">
-            <p>
-                <div id="bio">
-                    I'm a third year undergraduate student at UC Santa Cruz studying <a href="https://registrar.ucsc.edu/catalog/programs-courses/program-statements/tim.html" target="_blank">Technology and Information Management</a>.
+    </nav>
+
+    <main> <!-- about section -->
+        <section class="main-section" id="about">
+            <header id="about-header">
+                <h1>Hello! <strong>I'm Belinda</strong> 👩🏻‍💻 
+                </h1>
+            </header> 
+            <div id="about-content">
+                <p>
+                    I'm a third year undergraduate student at UC Santa Cruz majoring in <a href="https://registrar.ucsc.edu/catalog/programs-courses/program-statements/tim.html" target="_blank">Technology and Information Management</a>.
                     <br><br>
                     I'm building this website while learning front-end development through <a href="https://www.freecodecamp.org/learn/"  target="_blank">freeCodeCamp</a>, so it's a work in progress!
                     <br><br>
                     I am currently one final project away from completing the Responsive Web Design Certiifcation and also working on the JavaScript Algorithms and Data Structures Certification.
                     <br><br>
                     In the meantime, feel free to shoot me an email or a LinkedIn message, I'd be happy to chat 😃
-                </div>
-            </p>
-        </div>
-    </div>
-    <div id="why-dev">
-        <div id="why-dev-title">
-            <span>
-                Why I want to learn<strong> front-end development</strong>
-            </span>
-        </div>
-        <div id="why-dev-main">
-            <p>
-                I have always thought it was interesting to learn about why we perceive certain formats/structures/colors more appealing than others in addition to the complexity and design process that goes into creating the seemingly ordinary things we use everyday.
-                <br><br>
-                I remember that I first learned about this, and still do, from reading articles about <a href="https://uxdesign.cc/">UI/UX on Medium</a>.
-                <br><br>
-                I knew I liked seeing the visual side of projects, whether it was a flyer for a club event or presentation slides for a class, so that it was user-friendly and visually pleasing.
-                <br><br>
-                So, I took this as a sign that front-end development would be a great path for me. During my winter break, I finally took a leap on a HTML/CSS course and love it! I now view every website I go on differently, knowing that someone thoughtfully designed its layout and components for a reason.
-                <br><br>
-                I think it's pretty cool that I can build an entire website from scratch that many people will see and use. I'm eager to apply my knowledge and learn about how it all works!
-            </p>
-        </div>
-    </div>
-    <div id="projects">
-        <div class="projects-title">
-            <span>Here are the <strong>projects</strong> I've done so far</span>
-        </div>
-        <div class="projects-main">
-          <div class="projects-fcc">
-            <h3><b>freeCodeCamp projects:</b></h3>
-            <ul>
-                <li> 
-                    <p> <a class="project-link" href="https://codepen.io/belinda129/pen/eYmPKeG"  target="_blank">Tribute Page</a></p>
-                </li>
-                <li> 
-                    <p> <a class="project-link" href="https://codepen.io/belinda129/pen/vYEVQbg"  target="_blank">Survey Form</a></p>
-                </li>
-                <li>
-                    <p> <a class="project-link" href="https://codepen.io/belinda129/pen/qBdWMXr" target="_blank">Product Landing Page</a></p>
-                </li>
-                <li> 
-                    <p> <a class="project-link" href="https://codepen.io/belindayu/pen/RwPjVeo" target="_blank">Technical Documentation Page</a></p>
-                </li>
-                <li> 
-                    <p> <a class="project-link" href="https://codepen.io/belindayu/pen/qBdJZQN" target="_blank">Personal Portfolio</a> (in progress)</p>
-                </li>
-            </ul>
-            <p>↪ These have met the basic functionality requirements but I plan to continuing working on these to improve the UI.</p>
-        </div>
-        <br>
-        <div class="projects-other">
-            <h3><b>Other projects:</b></h3>
-            <ul>
-                <li> 
-                    <p> <a class="project-link" href="https://gwc.soe.ucsc.edu"  target="_blank">UCSC Girls Who Code College Loops website</a> (basic HTML alterations in source code on Drupal CMS)</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+                </p>
+            </div>
+        </section>
 
-<div id="contact">
-    <div class="contact-title"> 
-        <span>and ways to <strong>contact</strong> me</span>
-    </div>
-    <div class="contact-main">
-        <div class="social-media">
-                <div class="social-media-icon-email">
-                    <a href="mailto:belindakyu@gmail.com" target = "_blank">
-                        <img src="./icons/email.png" class="icon" alt="email">
-                    </a>
-                    
-                    <p class="social-media-label">belindakyu@gmail.com</p>
-                </div>
-                <br>
-                <div class="social-media-icon-linkedin">
-                    <a href="https://www.linkedin.com/in/belinda-yu/" target = "_blank">
-                        <img src="./icons/linkedin.png" class="icon" alt="linkedin"> 
-                    </a>
-                    <p class="social-media-label">belinda-yu</p>
-                </div>
-        </div>
-    </div>
-</div>
+        <!-- why dev section -->
+        <section class="main-section" id="whydev">
+            <header class="main-header">
+                <span>
+                    Why I want to learn<strong> front-end development</strong>
+                </span>
+            </header>
+            <div class="main-content">
+                <p>
+                    I have always thought it was fascinating to learn about why we perceive certain formats/structures/colors as more appealing than others, in addition to the complex design process that goes into creating the seemingly ordinary things we use everyday.
+                </p>
+                <p>
+                    I remember that I first learned about this, and still do, from reading articles about <a href="https://uxdesign.cc/">UI/UX on Medium</a>.
+                </p>
+                <p>
+                    I knew I enjoyed creating for the visual side of projects, whether it was a flyer for a club event or presentation slides for a class, so that it was user-friendly and visually pleasing.
+                </p>
+                <p>
+                    So, I took this as a sign that front-end development would be an ideal path for me. During my winter break, I finally took a leap on a HTML/CSS course and love it! I now view every website I go on differently, knowing that someone thoughtfully designed its layout and components for a reason.
+                </p>
+                <p>
+                    I think it's pretty cool that I can build an entire website from scratch that many people will see and use. I'm eager to apply my knowledge and learn about how it all works!
+                </p>
+            </div>
+        </section>
 
-<div class="closing">
-    <div class="closing-title">
-        <span>Thanks for stopping by!<br><br>I would love to hear from you</span>☺️
-    </div>
-</div>
+        <!-- projects section -->
+        <section class="main-section" id="projects">
+            <header class="main-header">
+                <span>Here are the <strong>projects</strong> I've done so far</span>
+            </header>
+            <div class="main-content">
+                <div id="projects-fcc">
+                    <h3>freeCodeCamp projects:</h3>
+                    <ul>
+                        <li> 
+                            <p><a class="project-link" href="https://codepen.io/belinda129/pen/eYmPKeG"  target="_blank">Tribute Page</a></p>
+                        </li>
+                        <li> 
+                            <p>
+                                <a class="project-link" href="https://codepen.io/belinda129/pen/vYEVQbg"  target="_blank">Survey Form</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p> <a class="project-link" href="https://codepen.io/belinda129/pen/qBdWMXr" target="_blank">Product Landing Page</a></p>
+                        </li>
+                        <li> 
+                            <p> <a class="project-link" href="https://codepen.io/belindayu/pen/RwPjVeo" target="_blank">Technical Documentation Page</a></p>
+                        </li>
+                        <li> 
+                            <p> <a class="project-link" href="https://codepen.io/belindayu/pen/qBdJZQN" target="_blank">Personal Portfolio</a> (in progress)</p>
+                        </li>
+                    </ul>
+                    <p>↪ These have met the basic functionality requirements but I plan to continuing working on these to improve the UI.</p>
+                </div>
+                <div class="projects-other">
+                    <h3>Other projects:</h3>
+                    <ul>
+                        <li> 
+                            <p> <a class="project-link" href="https://gwc.soe.ucsc.edu"  target="_blank">UCSC Girls Who Code College Loops website</a> (basic HTML alterations in source code on Drupal CMS)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section -->
+        <section class="main-section" id="contact">
+            <header class="main-header" id="contact-header"> 
+                <span>and how to <strong>contact</strong> me</span>
+            </header>
+            <div id="contact-content">
+                <div class="social-media">
+                    <div class="social-media-section">
+                        <a href="mailto:belindakyu@gmail.com" target = "_blank">
+                            <img src="./icons/email.png" class="icon" alt="email">
+                        </a>
+                        <p class="social-media-label">belindakyu@gmail.com</p>
+                    </div>
+                    <br>
+                    <div class="social-media-section">
+                        <a href="https://www.linkedin.com/in/belinda-yu/" target = "_blank">
+                            <img src="./icons/linkedin.png" class="icon" alt="linkedin"> 
+                        </a>
+                        <p class="social-media-label">belinda-yu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="closing">
+            <div id="closing-title">
+                <span>Thanks for stopping by!
+                    <br><br>
+                    I would love to hear from you☺️
+                </span>
+            </div>
+        </section>
+    </main>
 </body>
 
 <footer>
-    <div class="footer">
+    <div id="footer">
         <p>Made with
-            <span style="color:#70323E">♥</span> in Santa Cruz, CA </p>
-            <p>© Belinda Yu 2020</p>
-        </div>
-    </footer>
+            <span style="color:#70323E">♥</span> in Santa Cruz, CA 
+        </p>
+        <p>© Belinda Yu 2020</p>
+    </div>
+</footer>
 
-    </html>
+</html>
