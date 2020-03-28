@@ -112,7 +112,7 @@ a:hover {
   background-color: #E8E8E8;
   padding: 50px 120px;
   margin-bottom: 120px;
-  max-width: 65%;
+  max-width: 900px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .main-content p {
@@ -126,15 +126,16 @@ a:hover {
 
 /* contact */
 #contact {
-  max-width:50%;
+  width:600px;
   margin-left:auto; margin-right:0;
   
 }
 #contact-header {
   color: var(--font-color);
   font-size: 47px;
-  padding-right: 120px;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contact-content {
   display:flex;
@@ -184,6 +185,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 720px){
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-items {
+    vertical-align: top;
+    align-self:center;
+  }
   .main-header{
     padding:0px 10px;
     text-align: center; 
