@@ -1,11 +1,18 @@
 :root{
-  --main-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;  --font-color: #222222;
+  --main-font: "Rubik", sans-serif;
   --color-navbar: #deddfa; /*nav bar*/
   --color-body: white;
   --color-container: whitesmoke;
 }
 html {
   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{ /*hide scroll bar*/
+  display:none;
+}
+header {
+  text-align: center;
+
 }
 nav ul {
   list-style-type: none;
@@ -26,11 +33,13 @@ h1 {
   color: var(--font-color);
   font-weight: normal;
   font-size: 70px;
+  padding: 0px;
+  margin: 0px;
 }
 h2 {
   font-family: var(--main-font), sans-serif;
   color: var(--font-color);
-  font-size: 36px;
+  font-size: 60px;
 }
 h3 {
   color: var(--font-color);
@@ -79,67 +88,93 @@ a:hover {
 /* introduction */
 #about {
   background-color: white;
-  font-size: 18px;
-  padding: 90px 140px 0px 120px;
-  width: 82%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 #about-header {
   color: var(--font-color);
-  letter-spacing: 1px;
+  padding-bottom: 17px;
 }
 #about-content{ 
   color: var(--font-color);
   font-size: 20px;
-  width: 83%;
-  line-height: 40px;
+  line-height: 35px;
+  width: 50%;
 }
 
-/* main content - whydev & projects */
-#main-section {
-  background-color: white;
-  margin-top:80px;
+/* about me - whydev */
+#whydev {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
 }
-.main-header {
+#whydev-header{
   color: var(--font-color);
-  font-size: 55px;
-  padding-left: 120px;
-  padding-top: 60px;
+  font-size: 80px;
 }
-.main-content {
+#whydev-content {
   background-color: var(--color-container);
   padding: 50px 120px;
-  margin-bottom: 120px;
-  max-width: 900px;
+  width:55%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  line-height: 35px;
+  border-radius: 5px;
 }
-.main-content p {
-  line-height: 33px;
+
+/* projects */
+#projects {
+  background-color: cornflowerblue;
+  padding: 90px 50px;
 }
-#projects p {
-  line-height: normal;
+#projects h2 {
+  font-size: 50px;
+  color: linen;
+}
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project-tile {
+  border-radius: 5px;
+}
+.project-img {
+  width: 370px;
+  border-radius: 5px 5px 0px 0px;
+  display: block;
+}
+figcaption {
+  font-family: var(--font), sans-serif;
+  background-color: mediumslateblue;
+  color: ghostwhite;
+  font-size: 23px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 /* contact */
 #contact {
-  width:560px;
-  margin-left:auto; margin-right:0;
-  
+  background-color: #f3d1f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:80vh;
 }
 #contact-header {
   color: var(--font-color);
-  font-size: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 80px;
 }
 #contact-content {
-  display:flex;
-  justify-content: flex-end;
-  justify-content: space-around;
-  background-color: #E8E8E8;
   padding: 50px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 .social-media-label {
   letter-spacing: .3px;
@@ -147,8 +182,8 @@ a:hover {
 }
 .social-media-section {
   display: flex;
-  flex: row;
   align-items: center;
+  flex-direction: row;
 }
 .icon {
   padding:10px;
@@ -199,13 +234,17 @@ a:hover {
     overflow-y: scroll;
     display: inline-block;
     padding: 50px 90px;
-
   }
-
   p {
     text-align: center;
     font-size: 17px; 
   }
+  .project-img {
+  width: 270px;
+}
+figcaption {
+  font-size: 16px;
+}
   #contact-header {
     text-align: center; 
     padding:0px 10px;
@@ -217,6 +256,8 @@ a:hover {
   #closing-title{
     font-size: 35px; 
   }
+}
+  /* ^media queries^ */
 
 
 
