@@ -1,11 +1,12 @@
 <!DOCTYPE html> <!-- Tells the browser what HTML version the page is written in -->
-<html>
+
 <head> <!-- Includes a title for the document, scripts, styles, meta information, and more -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Poppins|Raleway&display=swap" rel="stylesheet">
     <title>Belinda Yu</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkles_2728.png">
     <meta property="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/sparkles_2728.png" content="X" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body> <!-- navigation bar -->
@@ -34,7 +35,7 @@
             <div id="about-content">
                 <p>
                     I'm a third year undergraduate student at UC Santa Cruz majoring in <a href="https://registrar.ucsc.edu/catalog/programs-courses/program-statements/tim.html" target="_blank">Technology and Information Management</a>, but 
-                    learning front-end development on the side through <a href="https://www.freecodecamp.org/learn/"  target="_blank">freeCodeCamp</a>. I'm eager to apply my skills further and looking for software engineering/front-end summer 2020 internships.
+                    learning front-end development on the side, primarily through <a href="https://www.freecodecamp.org/learn/"  target="_blank">freeCodeCamp</a>. I'm eager to apply my skills further and looking for software engineering/front-end summer and/or fall 2020 internships.
                     <br><br>
                     I recently completed my <a href="https://www.freecodecamp.org/certification/belindayu/responsive-web-design" target="_blank">Responsive Web Design Developer Certification</a> and am working on the <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/" target="_blank">JavaScript Algorithms and Data Structures Certification</a>. My projects are listed further down this page.
                     <br><br>
@@ -45,18 +46,18 @@
 
         <!-- why dev section -->
         <section class="main-section" id="whydev">
-            <header class="main-header">
-                <span>
-                    About<strong> me</strong>
-                </span>
+            <header class="main-header" id="whydev-header">
+                <h2>
+                    <span>About me</span>
+                </h2>
             </header>
-            <div class="main-content">
+            <div class="main-content" id="whydev-content">
                 <p>
                     I have always found it fascinating as to why we appeal to certain layouts, structures, and colors more than others, in addition to the complex design process that goes into building the seemingly ordinary things we use everyday.
                     I first discovered that there was a procedure for this through <a href="https://uxdesign.cc/">UX case studies on Medium</a>. I still continue to learn about it today, in addition to the multitude of topics on there.
                 </p>
                 <p>
-                    I knew I enjoyed contributing work for the visual side of projects, whether it was a flyer for a club event or presentation slides for a class, so that it was user-friendly, engaging, and visually pleasing.
+                    I knew that I enjoyed contributing work to the visual side of projects, whether it was a flyer for a club event or presentation slides for a class, so that it was user-friendly, engaging, and visually pleasing.
                 </p>
                 <p>
                     So, I took this as a sign that front-end development would be an ideal path for me. During my winter break, I finally took a leap on a HTML/CSS course and love it! I now view every website I go on differently, knowing that someone thoughtfully designed its layout and components for a reason.
@@ -68,93 +69,98 @@
         </section>
 
         <!-- projects section -->
-        <section class="main-section" id="projects">
-            <header class="main-header">
-                <span>My <strong>projects</strong></span>
+        <section id="projects">
+            <header id="projects-header">
+                <h2>These are some of my projects</h2>
             </header>
-            <div class="main-content">
-                <div id="projects-fcc">
-                    <h3>Responsive Web Design projects:</h3>
-                    <ul>
-                        <li> 
-                            <p><a class="project-link" href="https://codepen.io/belinda129/pen/eYmPKeG"  target="_blank">Tribute Page</a></p>
-                        </li>
-                        <li> 
-                            <p>
-                                <a class="project-link" href="https://codepen.io/belinda129/pen/vYEVQbg"  target="_blank">Survey Form</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p> <a class="project-link" href="https://codepen.io/belinda129/pen/qBdWMXr" target="_blank">Product Landing Page</a></p>
-                        </li>
-                        <li> 
-                            <p> <a class="project-link" href="https://codepen.io/belindayu/pen/RwPjVeo" target="_blank">Technical Documentation Page</a></p>
-                        </li>
-                        <li> 
-                            <p> <a class="project-link" href="https://codepen.io/belindayu/pen/qBdJZQN" target="_blank">Personal Portfolio Webpage</a></p>
-                        </li>
-                    </ul>
-                    <p>↪ These have met the basic functionality requirements but I plan to continue working on these to improve the UI.</p>
-                </div>
-                <br>
-                <div class="projects-other">
-                    <h3>Other projects:</h3>
-                    <ul>
-                        <li> 
-                            <p> <a class="project-link" href="https://gwc.soe.ucsc.edu"  target="_blank">UCSC Girls Who Code College Loops</a> (basic HTML alterations in source code on Drupal CMS)</p>
-                        </li>
-                    </ul>
-                </div>
+            <div id="projects-container">
+                <div class="project-tile">
+                    <a href="https://codepen.io/belinda129/pen/eYmPKeG">
+                      <figure>
+                        <img alt="tribute page" src="https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg" class="project-img">
+                        <figcaption>
+                            Tribute Page
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://codepen.io/belinda129/pen/vYEVQbg">
+                  <figure>
+                    <img alt="survey form" src="https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg" class="project-img">
+                    <figcaption>Survey Form</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="https://codepen.io/belinda129/pen/qBdWMXr">
+              <figure>
+                <img alt="product landing page" src="https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg" class="project-img">
+                <figcaption>Product Landing Page</figcaption>
+            </figure>
+        </a>
+    </div>
+    <div class="project-tile">
+        <a href="https://codepen.io/belinda129/pen/qBdWMXr">
+          <figure>
+            <img alt="technical documentation page" src="https://dimensionmill.org/wp-content/uploads/2019/03/square-placeholder.jpg" class="project-img">
+            <figcaption>
+                Technical Documentation Page
+            </figcaption>
+        </figure>
+    </a>
+</div>
+
+
+</div>
+</section>
+
+<!-- contact section -->
+<section class="main-section" id="contact">
+    <header class="main-header" id="contact-header"> 
+        <span>Let's connect!</span>
+    </header>
+    <div id="contact-content">
+        <div class="social-media">
+            <div class="social-media-section">
+                <a href="https://github.com/belindayu" target = "_blank">
+                    <img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="icon" alt="github">
+                </a>
+                <p class="social-media-label">belindayu</p>
+            </div>
+            <br>
+            <div class="social-media-section">
+                <a href="https://www.linkedin.com/in/belinda-yu/" target = "_blank">
+                    <img src="./icons/linkedin.png" class="icon" alt="linkedin"> 
+                </a>
+                <p class="social-media-label">belinda-yu</p>
+            </div>
+            <br>
+            <div class="social-media-section">
+                <a href="mailto:belindakyu@gmail.com" target = "_blank">
+                    <img src="./icons/email.png" class="icon" alt="email">
+                </a>
+                <p class="social-media-label">belindakyu@gmail.com</p>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- contact section -->
-        <section class="main-section" id="contact">
-            <header class="main-header" id="contact-header"> 
-                <span>Let's <strong>connect!</strong></span>
-            </header>
-            <div id="contact-content">
-                <div class="social-media">
-                    <div class="social-media-section">
-                        <a href="https://github.com/belindayu" target = "_blank">
-                            <img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="icon" alt="github">
-                        </a>
-                        <p class="social-media-label">belindayu</p>
-                    </div>
-                    <br>
-                    <div class="social-media-section">
-                        <a href="https://www.linkedin.com/in/belinda-yu/" target = "_blank">
-                            <img src="./icons/linkedin.png" class="icon" alt="linkedin"> 
-                        </a>
-                        <p class="social-media-label">belinda-yu</p>
-                    </div>
-                    <br>
-                    <div class="social-media-section">
-                        <a href="mailto:belindakyu@gmail.com" target = "_blank">
-                            <img src="./icons/email.png" class="icon" alt="email">
-                        </a>
-                        <p class="social-media-label">belindakyu@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!--<section id="closing">
+    <header id="closing-title">
+        <span>Thanks for stopping by!☺️
+        </span>
+    </header>
+</section>--->
 
-        <section id="closing">
-            <header id="closing-title">
-                <span>Thanks for stopping by!☺️
-                </span>
-            </header>
-        </section>
-    </main>
+</main>
 </body>
 
 <footer>
     <div id="footer">
         <p>Made with
-            <span style="color:#70323E">♥</span> in Santa Cruz, CA 
+            <span style="color:#70323E">♥</span> in Santa Cruz, CA
         </p>
         <p>© Belinda Yu 2020</p>
     </div>
 </footer>
-
-</html>
