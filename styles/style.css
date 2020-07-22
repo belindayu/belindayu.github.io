@@ -1,8 +1,8 @@
 :root{
-  --main-font: "Rubik", sans-serif;
+  --h-font: 'Playfair Display', serif;
+  --p-font: 'Karla', sans-serif;
   --color-navbar: #deddfa; /*nav bar*/
-  --color-body: white;
-  --color-container: whitesmoke;
+  --color-body: black;
 }
 html {
   scroll-behavior: smooth;
@@ -29,36 +29,36 @@ body {
   margin: 0px;
 }
 h1 {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--h-font), sans-serif;
   color: var(--font-color);
-  font-weight: normal;
-  font-size: 70px;
+  font-weight: bold;
+  font-size: 90px;
   padding: 0px;
   margin: 0px;
 }
 h2 {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--h-font), sans-serif;
   color: var(--font-color);
   font-size: 60px;
 }
 h3 {
   color: var(--font-color);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--h-font), sans-serif;
   font-size: 22px;
 }
 span {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--h-font), sans-serif;
   color: var(--font-color);
 }
 p {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--p-font), sans-serif;
   color: var(--font-color);
   font-size: 20px;
 }
 a {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--p-font);
   text-decoration: none;
-  color: #423C80;
+  color: cornflowerblue;
   transition: 0.3s;
 }
 a:hover {
@@ -80,6 +80,9 @@ a:hover {
   padding:19px;
   margin-right:20px;
 }
+.nav-items a {
+  color:black;
+}
 .nav-link {
   font-size: 20px;
   margin-left:40px;
@@ -92,7 +95,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 80px;
 }
 #about-header {
@@ -106,9 +109,9 @@ a:hover {
   width: 50%;
 }
 
-/* about me - whydev */
+/* about me / whydev */
 #whydev {
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +123,7 @@ a:hover {
   font-size: 80px;
 }
 #whydev-content {
-  background-color: var(--color-container);
+  background-color: whitesmoke;
   padding: 50px 120px;
   width:55%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
@@ -130,12 +133,12 @@ a:hover {
 
 /* projects */
 #projects {
-  background-color: cornflowerblue;
+  background-color: white;
   padding: 90px 50px;
 }
 #projects h2 {
   font-size: 50px;
-  color: linen;
+  color: black;
 }
 #projects-container {
   display: flex;
@@ -162,9 +165,8 @@ figcaption {
 
 /* contact */
 #contact {
-  background-color: #f3d1f4;
+  background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height:80vh;
@@ -172,6 +174,7 @@ figcaption {
 #contact-header {
   color: var(--font-color);
   font-size: 80px;
+  display: inline-block;
 }
 #contact-content {
   padding: 50px;
@@ -180,11 +183,6 @@ figcaption {
   letter-spacing: .3px;
   font-size:20px;
 }
-.social-media-section {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
 .icon {
   padding:10px;
   padding-right:12px;
@@ -192,21 +190,12 @@ figcaption {
   height: 30px;
 }
 .icon:hover {
-  transform: scale(1.03);
-}
-
-/* CLOSING */
-#closing {
-  padding: 250px;
-}
-#closing-title {
-  font-size: 50px;
-  text-align:center;
+  transform: scale(1.02);
 }
 
 /* footer */
 #footer {
-  background-color: #dcdbe1;
+  background-color: whitesmoke;
   padding: 1px;
   padding-left: 30px;
   text-align:left;
