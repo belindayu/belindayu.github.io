@@ -55,12 +55,12 @@ p {
 a {
   font-family: var(--p-font);
   text-decoration: none;
-  color: slategrey;
+  color: #404040;
   transition: 0.3s;
 }
 a:hover {
   background-color: thistle;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #navbar {
@@ -238,10 +238,10 @@ flex-direction: row;
     vertical-align: top;
     align-self:center;
   }
-  .main-header{
-    padding:0px 10px;
+  #about-header{
+    padding:0;
     text-align: center; 
-    font-size: 40px;  
+    font-size: 50px;  
   }
   .main-content{ 
     overflow-y: scroll;
