@@ -39,14 +39,18 @@ h1 {
 h2 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
+  font-size: 90px;
   font-weight:normal;
   padding: 0px;
   margin: 0px;
 }
 h3 {
   font-family: var(--h-font), sans-serif;
-  color: var(--p-color);
-  font-size: 22px;
+  color: var(--h-color);
+  font-size: 70px;
+  font-weight:normal;
+  padding: 0px;
+  margin: 0px;
 }
 p {
   font-family: var(--p-font), sans-serif;
@@ -102,26 +106,27 @@ a:hover {
 #home-header {
   color: var(--h-color);
   font-size: 100px;
-  padding:0px 60px 17px;
+  padding:0px 60px 0px;
 }
 #home-content{ 
   color: var(--font-color);
-  padding:30px 30px;
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   flex-flow: wrap;
+  padding:0px 30px;
 }
 #home-paragraph{
-  font-size: 80px;
-  width:67%;
-  line-height: 70px;
+  font-size: 87px;
+  max-width:67%;
+  line-height: 90px;
 }
 #me-pic {
   height:300px;
   width:300px;
   border: 3px solid #e65e60;
   border-radius: 50%;
+  margin-right:30px;
 }
 
 /* about / whydev */
@@ -133,24 +138,28 @@ a:hover {
   padding-bottom: 120px;
 }
 #about-header{
-
+padding:40px;
+text-align: center;
 }
 #about-content {
   background-color: whitesmoke;
-  padding: 50px 120px;
-  width:47%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-  line-height: 35px;
   border-radius: 5px;
+  padding: 50px 120px;
+  width:48%;
+  line-height: 35px;
 }
 
 /* projects */
 #projects {
-  padding: 90px 50px;
+  margin:50px 0px;
 }
 #projects-header {
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
+}
+#projects-subtitle {
+  font-size: 16px;
 }
 #projects-container {
   display: flex;
@@ -161,18 +170,20 @@ a:hover {
   border-radius: 5px;
 }
 .project-img {
-  width: 370px;
+  width: 270px;
   border-radius: 5px 5px 0px 0px;
   display: block;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 figcaption {
   font-family: var(--font), sans-serif;
   background-color: var(--h-color);
   color: ghostwhite;
-  font-size: 23px;
+  font-size: 16px;
   text-align: center;
   padding: 15px;
   border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
 
 /* contact */
@@ -187,19 +198,14 @@ figcaption {
   text-decoration: none;
   font-family: var(--h-font);
   color: var(--h-color);
-  font-size: 80px;
+  font-size: 100px;
   padding:0px;
   margin:0px;
 }
 #social-media {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.social-media-label {
-  letter-spacing: .3px;
-  font-size:20px;
 }
 .icon {
   padding:10px;
@@ -210,8 +216,10 @@ figcaption {
 .icon a{
   border:none;
 }
-
-
+#icon-email {
+  width: 50px;
+  height: 40px;
+}
 /* footer */
 #footer {
   background-color: whitesmoke;
@@ -237,6 +245,9 @@ figcaption {
     vertical-align: top;
     align-self:center;
   }
+  #home {
+    padding:0;
+  }
   #home-header{
     text-align: center; 
     padding:0px;
@@ -245,17 +256,18 @@ figcaption {
     width:100%;
     line-height: 60px;
     padding:0px;
+    font-size:60px;
   }
   #about-content {
     width:80%;
   }
   .main-content{ 
-    overflow-y: scroll;
+    overflow-y: auto;
     display: inline-block;
     padding: 50px 90px;
   }
   p {
-    font-size: 17px; 
+    font-size: 19px; 
     line-height: 36px;
   }
   .project-img {
