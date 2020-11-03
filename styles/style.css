@@ -55,7 +55,7 @@ h3 {
 p {
   font-family: var(--p-font), sans-serif;
   color: var(--font-color);
-  font-size: 24px;
+  font-size: 22px;
 }
 a {
   font-family: var(--p-font);
@@ -129,7 +129,7 @@ a:hover {
   margin-right:30px;
 }
 
-/* about / whydev */
+/* about */
 #about {
   display: flex;
   flex-direction: column;
@@ -137,10 +137,12 @@ a:hover {
   align-items: center;
   padding-bottom: 120px;
 }
+
 #about-header{
 padding:40px;
 text-align: center;
 }
+
 #about-content {
   background-color: whitesmoke;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
@@ -149,7 +151,23 @@ text-align: center;
   width:48%;
   line-height: 35px;
 }
+#summary {
+  line-height: 45px;
+  text-align: center;
+}
 
+.about-logo {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  max-width: 500px;
+  max-height: 100px;
+}
+
+.about-logo:hover {
+  transition: transform .3s;
+  transform: scale(1.1);
+}
 /* projects */
 #projects {
   margin:50px 0px;
@@ -185,6 +203,10 @@ figcaption {
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
+.project-tile:hover {
+  transition: transform .3s;
+  transform: scale(1.1);
+}
 
 /* contact */
 #contact {
@@ -198,28 +220,29 @@ figcaption {
   text-decoration: none;
   font-family: var(--h-font);
   color: var(--h-color);
-  font-size: 100px;
+  font-size: 120px;
   padding:0px;
   margin:0px;
 }
 #social-media {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .icon {
   padding:10px;
   padding-right:30px;
-  width: 45px;
-  height: 45px;
+  width: auto;
+  height: 47px;
 }
 .icon a{
   border:none;
 }
-#icon-email {
-  width: 50px;
-  height: 40px;
+.icon:hover {
+  transition: transform .3s;
+  transform: scale(1.05);
 }
+
 /* footer */
 #footer {
   background-color: whitesmoke;
@@ -274,7 +297,7 @@ figcaption {
     width: 360px;
   }
   figcaption {
-    font-size: 18px;
+    font-size: 19px;
   }
   #contact-header {
     text-align: center; 
