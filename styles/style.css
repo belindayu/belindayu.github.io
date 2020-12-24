@@ -97,11 +97,11 @@ a:hover {
 
 }
 
-/* home / landing page */
+/* landing */
 #home {
   display: flex;
   flex-direction: column;
-  padding: 100px 80px 150px;
+  padding: 50px 80px 150px;
 }
 #home-header {
   color: var(--h-color);
@@ -117,7 +117,7 @@ a:hover {
   padding:0px 30px;
 }
 #home-paragraph{
-  font-size: 87px;
+  font-size: 85px;
   max-width:67%;
   line-height: 90px;
 }
@@ -188,7 +188,11 @@ text-align: center;
   border-radius: 5px;
 }
 .project-img {
-  width: 270px;
+  /* max-width:300px;
+  max-height:300px; */
+  object-fit: cover;
+  width:300px;
+  height:300px;
   border-radius: 5px 5px 0px 0px;
   display: block;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
