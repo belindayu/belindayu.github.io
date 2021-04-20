@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
-  font-size: 90px;
+  font-size: 70px;
   font-weight:normal;
   padding: 0px;
   margin: 0px;
@@ -47,7 +47,7 @@ h2 {
 h3 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
-  font-size: 70px;
+  font-size: 55px;
   font-weight:normal;
   padding: 0px;
   margin: 0px;
@@ -55,7 +55,7 @@ h3 {
 p {
   font-family: var(--p-font), sans-serif;
   color: var(--font-color);
-  font-size: 22px;
+  font-size: 18px;
 }
 a {
   font-family: var(--p-font);
@@ -102,22 +102,19 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 50px 80px 150px;
-}
-#home-header {
-  color: var(--h-color);
-  font-size: 100px;
-  padding:0px 60px 0px;
+  
 }
 #home-content{ 
   color: var(--font-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: wrap;
   padding:0px 30px;
+  margin-top:100px;
 }
 #home-paragraph{
-  font-size: 85px;
+  font-size: 65px;
   max-width:67%;
   line-height: 90px;
 }
@@ -135,7 +132,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 #about-header{
@@ -147,9 +144,10 @@ text-align: center;
   background-color: whitesmoke;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
   border-radius: 5px;
-  padding: 50px 120px;
-  width:48%;
+  padding: 50px 150px;
+  width:50%;
   line-height: 35px;
+  
 }
 #summary {
   line-height: 45px;
@@ -158,8 +156,8 @@ text-align: center;
 
 .about-logo {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+margin-right: auto;
   max-width: 500px;
   max-height: 100px;
 }
@@ -170,11 +168,16 @@ text-align: center;
 }
 /* projects */
 #projects {
-  margin:50px 0px;
+  padding: 40px;
+  margin:50px 150px;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  border-radius: 5px;
 }
 #projects-header {
   font-size: 100px;
   text-align: center;
+  padding: 0px 0px 30px 0px;
 }
 #projects-subtitle {
   font-size: 16px;
@@ -188,11 +191,9 @@ text-align: center;
   border-radius: 5px;
 }
 .project-img {
-  /* max-width:300px;
-  max-height:300px; */
   object-fit: cover;
-  width:300px;
-  height:300px;
+  width:330px;
+  height:250px;
   border-radius: 5px 5px 0px 0px;
   display: block;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
@@ -209,7 +210,7 @@ figcaption {
 }
 .project-tile:hover {
   transition: transform .3s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* contact */
@@ -219,12 +220,16 @@ figcaption {
   align-items: center;
   flex-direction: column;
   height: 80vh;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  border-radius: 5px;
+  margin:80px 150px;
 }
 #contact-header {
   text-decoration: none;
   font-family: var(--h-font);
   color: var(--h-color);
-  font-size: 120px;
+  font-size: 78px;
   padding:0px;
   margin:0px;
 }
@@ -281,10 +286,11 @@ figcaption {
   }
   #home-paragraph{
     width:100%;
-    line-height: 60px;
+    line-height:60px;
     padding:0px;
     font-size:60px;
   }
+
   #about-content {
     width:80%;
   }
