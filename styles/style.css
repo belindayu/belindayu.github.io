@@ -3,9 +3,9 @@
   --h-color: #e65e60;
   --p-font: 'Karla', sans-serif;
   --p-color: #2d2d2d;
-  --navbar-color: ; /*nav bar #9D9CFB*/
-  --body-color:#b4bcfb;
+  --body-color:#FAFAFA;
   --link-color:#e65e60;
+  --secondary-color: whitesmoke;
 }
 html {
   scroll-behavior: smooth;
