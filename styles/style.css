@@ -239,8 +239,8 @@ figcaption {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
-  background-color: whitesmoke;
+  height: 50vh;
+  background-color: var(--secondary-color);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
   border-radius: 5px;
   margin:80px 150px;
@@ -274,7 +274,7 @@ figcaption {
 
 /* footer */
 #footer {
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
   text-align:left;
   padding:1px;
   padding-left:30px;
