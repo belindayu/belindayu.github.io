@@ -13,9 +13,7 @@ html {
 html::-webkit-scrollbar{ /*hide scroll bar*/
   display:none;
 }
-header {
 
-}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -55,7 +53,7 @@ h3 {
 p {
   font-family: var(--p-font), sans-serif;
   color: var(--font-color);
-  font-size: 18px;
+  font-size: 1.12em;
 }
 a {
   font-family: var(--p-font);
