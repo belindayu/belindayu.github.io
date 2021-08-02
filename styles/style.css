@@ -129,78 +129,105 @@ a:hover {
 }
 
 #about-header{
-padding:40px;
-text-align: center;
-}
-
-#about-content {
-  background-color: whitesmoke;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-  border-radius: 5px;
-  padding: 50px 150px;
-  width:50%;
-  line-height: 35px;
-  
-}
-#summary {
-  line-height: 45px;
+  padding:30px;
   text-align: center;
 }
 
+#about-container {
+  background-color: var(--secondary-color);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  border-radius: 5px;
+  padding: 50px 125px;
+  width:60%;
+  line-height: 45px;
+}
+
+#about-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-item {
+  display: flex;
+  align-items: center; 
+  flex-direction: row;
+  text-align: left;
+}
+
+.about-img-link {
+  display: inline-block; 
+  margin: 25px; 
+  border-bottom: 0;
+}
+
 .about-logo {
-  display: block;
-  margin-left: auto;
-margin-right: auto;
-  max-width: 500px;
-  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+    width:  120px;
+    height: 120px;
+    text-decoration: none;
+    margin-right: 50px;
 }
 
 .about-logo:hover {
   transition: transform .3s;
   transform: scale(1.1);
 }
+
 /* projects */
 #projects {
-  padding: 40px;
-  margin:50px 150px;
-  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+#projects-header {
+  padding:30px;
+  text-align: center;
+}
+
+#projects-container {
+  background-color: var(--secondary-color);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
   border-radius: 5px;
+  padding: 50px 125px;
+  width:60%;
 }
-#projects-header {
-  font-size: 100px;
-  text-align: center;
-  padding: 0px 0px 30px 0px;
-}
-#projects-subtitle {
-  font-size: 16px;
-}
-#projects-container {
+
+#projects-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .project-tile {
   border-radius: 5px;
 }
+
 .project-img {
   object-fit: cover;
-  width:330px;
+  width:500px;
   height:250px;
   border-radius: 5px 5px 0px 0px;
   display: block;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
+
 figcaption {
   font-family: var(--font), sans-serif;
   background-color: var(--h-color);
-  color: ghostwhite;
+  color: var(--body-color);
   font-size: 16px;
   text-align: center;
   padding: 15px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
+
 .project-tile:hover {
   transition: transform .3s;
   transform: scale(1.05);
