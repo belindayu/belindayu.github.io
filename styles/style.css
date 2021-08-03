@@ -30,19 +30,9 @@ body {
 }
 h1 {
   font-family: var(--h-font), sans-serif;
-  font-weight:normal;
-  padding: 0px;
-  margin: 0px;
+  color: var(--h-color);
 }
 h2 {
-  font-family: var(--h-font), sans-serif;
-  color: var(--h-color);
-  font-size: 70px;
-  font-weight:normal;
-  padding: 0px;
-  margin: 0px;
-}
-h3 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
   font-size: 55px;
@@ -157,6 +147,7 @@ a:hover {
   display: inline-block; 
   margin: 25px; 
   border-bottom: 0;
+  /* object-fit: cover; */
 }
 
 .about-logo {
@@ -177,7 +168,7 @@ a:hover {
 /* projects */
 #projects {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   margin-bottom: 120px;
@@ -208,7 +199,7 @@ a:hover {
 
 .project-img {
   object-fit: cover;
-  width:500px;
+  width:300px;
   height:250px;
   border-radius: 5px 5px 0px 0px;
   display: block;
