@@ -31,6 +31,7 @@ body {
 h1 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
+  font-size: 63px;
 }
 h2 {
   font-family: var(--h-font), sans-serif;
@@ -95,8 +96,7 @@ a:hover {
   flex-wrap: wrap;
 }
 #home-title{
-  font-size: 63px;
-  max-width:55%;
+  max-width: 55%;
   margin-left: 50px;
   line-height: 1.5em;
 }
@@ -147,7 +147,6 @@ a:hover {
   display: inline-block; 
   margin: 25px; 
   border-bottom: 0;
-  /* object-fit: cover; */
 }
 
 .about-logo {
@@ -168,7 +167,6 @@ a:hover {
 /* projects */
 #projects {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   margin-bottom: 120px;
