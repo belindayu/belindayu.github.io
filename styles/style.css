@@ -31,7 +31,7 @@ body {
 h1 {
   font-family: var(--h-font), sans-serif;
   color: var(--h-color);
-  font-size: 63px;
+  font-size: 55px;
 }
 h2 {
   font-family: var(--h-font), sans-serif;
