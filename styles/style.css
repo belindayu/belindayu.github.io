@@ -262,19 +262,19 @@ figcaption {
 
 
 /* footer */
-.footer {
+footer {
   background-color: var(--secondary-color);
-  opacity:.75;
-  padding:1px 30px;
+}
+.footer-container {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  opacity:.75;
+  padding:1px 25px;
 }
-.footer p{
+.footer-container p{
   font-size: 16px;
-}
-.footer-right {
-  display:flex;
+  opacity:.85;
 }
 
 .social-media {
