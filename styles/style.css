@@ -78,6 +78,7 @@ a:hover {
   width:100%;
   box-shadow: 0 2px 4px -1px rgba(0,0,0,0.15);
   z-index: 1;
+  padding:3px 0px;
 }
 .nav-items {
   display:flex;
@@ -137,6 +138,7 @@ a:hover {
 .about-heading{
   padding-bottom:30px;
   text-align: center;
+  padding-top:10px;
 }
 
 .about-container {
@@ -279,14 +281,12 @@ footer {
 
 .social-media {
   display: flex;
-  justify-content: space-evenly;
-  /* align-items: flex-end; */
-  gap:30px;
 }
 .icon {
   width: auto;
   height: 33px;
   opacity: 0.9;
+  padding-left: 15px;
 }
 .icon a{
   border:none;
@@ -324,6 +324,12 @@ footer {
     font-size: 16px; 
     line-height: 36px;
   }
+  .projects-container{
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    width:auto;
+  }
   .project-img {
     width: 360px;
   }
@@ -341,7 +347,7 @@ footer {
   
 }
 
-/********* media queries **********/
+/********* END media queries **********/
 
 
 
