@@ -142,7 +142,7 @@ a:hover {
 .about-container {
   background-color: var(--secondary-color);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-  border-radius: 5px;
+  border-radius: 33px;
   padding: 50px 125px;
   width:60%;
   line-height: 45px;
@@ -202,7 +202,7 @@ font-weight: bold;
 .projects-container {
   background-color: var(--secondary-color);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-  border-radius: 5px;
+  border-radius: 33px;
   padding: 50px 125px;
   width:60%;
 }
