@@ -181,8 +181,7 @@ a:hover {
 
 .about-logo:hover {
   transition: transform .3s;
-  transform: scale(1.1);
-}
+  transform: scale(1.02);}
 
 .about a {
 font-weight: bold;
@@ -241,7 +240,7 @@ figcaption {
 
 .project-tile:hover {
   transition: transform .3s;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 
