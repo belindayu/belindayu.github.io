@@ -147,7 +147,7 @@ a:hover {
   border-radius: 33px;
   padding: 50px 125px;
   width:60%;
-  line-height: 45px;
+  line-height: 33px;
 }
 
 .about-content {
@@ -173,8 +173,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   float: left;
-  width:  120px;
-  height: 120px;
+  width:  100px;
+  height: 100px;
   text-decoration: none;
   margin-right: 50px;
 }
@@ -220,7 +220,7 @@ font-weight: bold;
 
 .project-img {
   object-fit: cover;
-  width:300px;
+  width:290px;
   height:250px;
   border-radius: 5px 5px 0px 0px;
   display: block;
@@ -231,7 +231,7 @@ figcaption {
   font-family: var(--font), sans-serif;
   background-color: var(--h-color);
   color: var(--body-color);
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   padding: 15px;
   border-radius: 0px 0px 5px 5px;
