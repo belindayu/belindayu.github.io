@@ -98,7 +98,6 @@ a:hover {
 .nav-link {
   font-size: 20px;
   margin-left:40px;
-
 }
 
 /* landing */
@@ -135,8 +134,8 @@ a:hover {
   margin-bottom: 120px;
 }
 
-.about-heading{
-  padding-bottom:30px;
+.about-heading {
+  /* padding-bottom:30px; */
   text-align: center;
   padding-top:10px;
 }
@@ -147,13 +146,13 @@ a:hover {
   border-radius: 33px;
   padding: 50px 125px;
   width:60%;
-  line-height: 33px;
 }
 
 .about-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  line-height: 36px;
 }
 
 .about-item {
@@ -243,25 +242,6 @@ figcaption {
   transform: scale(1.02);
 }
 
-
-/* transition effect */
-.come-in {
-	transform: translateY(1000px);
-	animation: come-in 1.2s ease forwards;
-}
-.come-in:nth-child(odd) {
-	animation-duration: 1.5s;
-}
-.already-visible {
-	transform: translateY(0);
-	animation: none;
-}
-
-@keyframes come-in {
-	to { transform: translateY(0); }
-}
-
-
 /* footer */
 footer {
   background-color: var(--secondary-color);
@@ -292,7 +272,24 @@ footer {
 }
 .icon:hover {
   transition: transform .3s;
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+/* transition effect */
+.come-in {
+	transform: translateY(1000px);
+	animation: come-in 1.2s ease forwards;
+}
+.come-in:nth-child(odd) {
+	animation-duration: 1.5s;
+}
+.already-visible {
+	transform: translateY(0);
+	animation: none;
+}
+
+@keyframes come-in {
+	to { transform: translateY(0); }
 }
 
 /********* media queries **********/
@@ -343,7 +340,6 @@ footer {
     min-width: 90%;
     margin-left: 0;
   }
-  
 }
 
 /********* END media queries **********/
